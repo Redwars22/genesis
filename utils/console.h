@@ -22,16 +22,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-#include <iostream>
-#include "utils/console.h"
-
-void boot()
-{
-    report("Booting into Genesis OS...");
-}
-
-int main()
-{
-    boot();
-    return 0;
-}
+void report(char*);
