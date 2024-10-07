@@ -23,3 +23,4 @@ SOFTWARE.
 */
 
 void report(char*);
+void enterConsoleMode();

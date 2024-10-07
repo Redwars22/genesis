@@ -24,7 +24,19 @@ SOFTWARE.
 
 #include <cstdio>
 
+bool IS_CONSOLE_MODE = true;
+
 void report(char message[])
 {
     printf("%s\n", message);
+}
+
+void enterConsoleMode()
+{
+    char command[255];
+    while(IS_CONSOLE_MODE)
+    {
+        printf(" -$: ");
+        scanf("%s", command);
+    }
 }

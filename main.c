@@ -25,9 +25,15 @@ SOFTWARE.
 #include <iostream>
 #include "utils/console.h"
 
+bool ALL_PROCESSES_LOADED;
+
 void boot()
 {
     report("Booting into Genesis OS...");
+    ALL_PROCESSES_LOADED = true;
+    
+    if(ALL_PROCESSES_LOADED)
+        enterConsoleMode();
 }
 
 int main()
